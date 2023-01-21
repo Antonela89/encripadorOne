@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./estilos/reset.css">
+    <link rel="stylesheet" href="./estilos/style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./imagenes/Vectorlogo alura.png" alt="logo de Alura">
+            <div>
+                <p>Alura</p>
+                <p>Challenge 01</p>
+            </div>
+        </div>
+        <h1>Encriptador</h1>
+    </header>
+    <main>
+        <section>
+            <div class="texto">
+                <label for="input">Ingrese Texto:</label>
+                <textarea name="" id="input"></textarea>
+                <div class="botones">
+                    <button onclick="encriptar(text, esValido, transcripcion)">Encriptar</button>
+                    <button onclick="desencriptar(text, esValido,transcripcion)">Desencriptar</button>
+                </div>
+            </div>
+            <div id="contenedor-transcripcion" class="texto">
+                <label for="transcripcion">Transcripción:</label>
+                <textarea name="" id="transcripcion"></textarea>
+                <div class="botones">
+                    <button onclick="copiar(text, transcripcion)">Copiar</button>
+                    <button onclick="limpiar(text, transcripcion)">Limpiar</button>
+                </div>
+            </div>
+            <div id="contenedor-img">
+                <img src="./imagenes/Muñeco.png" alt="imagen de busqueda">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Antonela Borgogno - 2022</p>
+    </footer>
+</body>
+
+<script src="./script.js"></script>
+</html>
