@@ -63,6 +63,7 @@ section {
     width: calc(80%/2);
     height: 65vh;
     margin: 1%;
+    margin-left: 5%;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -73,6 +74,7 @@ section {
     right: 1%;
     z-index: -1;
     opacity: 0;
+    margin-right: 5%;
     transition: opacity 0.5s;
 }
 
@@ -127,6 +129,7 @@ button:hover {
     position: relative;
     margin-top: 10px;
     right: 1%;
+    margin-right: 5%;
     padding: 10px;
     border: solid 2px #E5DDC8;
     border-radius: 15px;
@@ -166,32 +169,126 @@ footer p{
     text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-
-}
-
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) { /*tablet*/
     body {
-        height: calc(15vh + 4px + 150vh + 4px + 10vh);
+        width: 100%;
+        height: 120vh;
+    }
+
+    header {
+        width: 100%;
+        height: 10vh;
     }
 
     main {
-        height: 150vh;
+        width: 100%;
+        height: 100vh;
     }
 
     section {
         width: 100%;
-        height: 150vh;
-        flex-direction: column;
+        height: 100vh;
+        position: relative;
+        justify-content: space-around;
         align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto {
+        position: relative;
+        width: 80%;
+        height: 40vh;
+        margin: 0;
         justify-content: center;
     }
 
-    .texto, .botones {
-        width: 90%;
-        height: 50vh;
-        padding: 5px;
+    #contenedor-transcripcion {
+        position: relative;
+        right: 0;
+        width: 80%;
+        height: 40vh;
+        margin: 0;
+        opacity: 1;
         justify-content: center;
+    }
+
+    #contenedor-img {
+        display: none;
+        position: absolute;
+    }
+
+    footer {
+        width: 100%;
+        height: 10vh;
+    }
+
+}
+
+@media screen and (max-width: 375px) { /*celular*/
+    header {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+    }
+
+    .logo {
+        position: relative;
+        left: 0;
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1%;
+    }
+
+    header h1 {
+        position: relative;
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1%;
+    }
+
+    main {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+    }
+
+    section {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .texto {
+        position: relative;
+        width: 80%;
+        height: 40vh;
+        margin: 0;
+    }
+
+    #contenedor-transcripcion {
+        position: relative;
+        right: 0;
+        width: 80%;
+        height: 40vh;
+        margin: 0;
+        opacity: 1;
+    }
+
+    #contenedor-img {
+        display: none;
+        position: absolute;
     }
 
     footer {
