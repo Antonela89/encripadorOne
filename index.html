@@ -26,7 +26,7 @@
         <section>
             <div class="texto">
                 <label for="input">Ingrese Texto:</label>
-                <textarea name="" id="input"></textarea>
+                <textarea name="" id="input" placeholder="Solo minúsculas"></textarea>
                 <div class="botones">
                     <button onclick="encriptar(text, esValido, transcripcion)">Encriptar</button>
                     <button onclick="desencriptar(text, esValido,transcripcion)">Desencriptar</button>
@@ -41,7 +41,10 @@
                 </div>
             </div>
             <div id="contenedor-img">
+                <div id="img">
                 <img src="./imagenes/Muñeco.png" alt="imagen de busqueda">
+                </div>
+                <h2>Ningún texto fue encontrado</h2>
             </div>
         </section>
     </main>
