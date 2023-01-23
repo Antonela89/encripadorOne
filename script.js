@@ -18,7 +18,7 @@ Por favor ingrese un texto válido`)
         contenedorImg.style.opacity = "0";
         contenedorTexto.style.opacity = "1";
         contenedorTexto.style.zIndex = "1"
-        let arrayText = text.value.split("");
+        let arrayText = text.value.toLowerCase().split("");
         let newText = "";
 
         for(let i = 0; i < arrayText.length; i++) {
