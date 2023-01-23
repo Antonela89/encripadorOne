@@ -40,7 +40,7 @@ Por favor ingrese un texto válido`)
 }
 
 function desencriptar(text, esValido, transcripcion) {
-    let texto = text.value;
+    let texto = text.value.toLowerCase();
 
     if (esValido) {
         alert(`El encriptador sólo acepta palabras minúsculas. 
