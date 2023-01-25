@@ -1,6 +1,6 @@
 var text = document.getElementById("input");
 var transcripcion = document.getElementById("transcripcion");
-var esValido = validacion(text.value);
+
 const contenedorImg = document.getElementById("contenedor-img");
 const contenedorTexto = document.getElementById("contenedor-transcripcion");
 
@@ -9,16 +9,16 @@ function validacion(text) {
     return expresion.test(text.value);
 }
 
-function encriptar(text, esValido, transcripcion) {
+function encriptar(text, transcripcion) {
+    let esValido = validacion(text);
     if (esValido) {
         alert(`El encriptador sólo acepta palabras minúsculas. 
 Por favor ingrese un texto válido`)
-
     } else {
         contenedorImg.style.opacity = "0";
         contenedorTexto.style.opacity = "1";
         contenedorTexto.style.zIndex = "1"
-        let arrayText = text.value.toLowerCase().split("");
+        let arrayText = text.value.split("");
         let newText = "";
 
         for(let i = 0; i < arrayText.length; i++) {
@@ -39,8 +39,9 @@ Por favor ingrese un texto válido`)
     }
 }
 
-function desencriptar(text, esValido, transcripcion) {
-    let texto = text.value.toLowerCase();
+function desencriptar(text, transcripcion) {
+    let esValido = validacion(text);
+    let texto = text.value;
 
     if (esValido) {
         alert(`El encriptador sólo acepta palabras minúsculas. 
