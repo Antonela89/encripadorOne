@@ -177,7 +177,7 @@ footer p{
 @media only screen and (max-width: 768px) { /*tablet*/
     body {
         width: 100%;
-        height: 120vh;
+        height: 100vh;
     }
 
     header {
@@ -187,50 +187,79 @@ footer p{
 
     main {
         width: 100%;
-        height: 100vh;
+        height: 80vh;
     }
 
     section {
         width: 100%;
-        height: 100vh;
+        height: 80vh;
         position: relative;
         justify-content: space-around;
         align-items: center;
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
+        overflow: hidden;
     }
 
     .texto {
         position: relative;
-        width: 80%;
-        height: 40vh;
+        width: 90%;
+        height: 30vh;
         margin: 0;
-        margin-top: 45px;
-        justify-content: center;
+        padding: 7px;
+        display: flex;
+        align-items: center;
+    }
+
+    .texto label {
+        font-size: 15px;
+        margin-bottom: 2px;
+    }
+
+    .texto #input, .texto #transcripcion {
+        width: 90%;
+        height: 80%;
+    }
+
+    .texto .botones {
+        width: 90%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+    }
+
+    .texto .botones button {
+        margin: 0;
+        margin-top: 10px;
+        height: 100%;
+        text-align: center;
+        text-justify: center;
     }
 
     #contenedor-transcripcion {
-        position: relative;
+        position: absolute;
+        left: 30px;
         right: 0;
-        width: 80%;
-        height: 40vh;
+        bottom: 10px;
+        width: 90%;
+        height: 30vh;
         margin: 0;
-        margin-top: 45px;
         opacity: 1;
-        justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-items: center;
     }
 
     #contenedor-img {
         position: relative;
         display: flex;
-        bottom: 40vh;
         left: 0;
         right: 0;
         margin: 0;
-        width: 80%;
-        height: 20vh;
+        width: 90%;
+        height: 5vh;
         text-align: center;
-        text-justify: auto;
     }
 
     #contenedor-img h2 {
@@ -256,7 +285,7 @@ footer p{
 @media only screen and (max-width: 375px) { /*celular*/
     body {
         width: 100%;
-        height: 120vh;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -294,35 +323,53 @@ footer p{
 
     main {
         width: 100%;
-        height: 100vh;
+        height: 80vh;
         display: flex;
     }
 
     section {
         width: 100%;
-        height: 100vh;
+        height: 80vh;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
-    }
+        align-content: space-around;
+        }
 
     .texto {
         position: relative;
         width: 80%;
-        height: 40vh;
+        height: 40%;
+        padding: 10px;
         margin: 0;
-        margin-top: 45px;
+        
+    }
+
+    .texto #input {
+        width: 100%;
+        height: 80%;
+    }
+
+    .texto .botones {
+        width: 100%;
+        height: 20%;
     }
 
     #contenedor-transcripcion {
-        position: relative;
+        position: absolute;
         right: 0;
         width: 80%;
-        height: 40vh;
+        height: 40%;
         margin: 0;
-        margin-top: 45px;
+        padding: 10px;
         opacity: 1;
+    }
+
+    #contenedor-img {
+        width: 80%;
+        height: 20%;
+        margin: 0;
+        padding: 10px;
     }
 
     #img {
