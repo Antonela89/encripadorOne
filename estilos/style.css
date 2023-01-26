@@ -280,10 +280,6 @@ footer p{
     header {
         justify-content:flex-end;
     }
-
-    #contenedor-transcripcion {
-        left: 10px,
-    }
 }
 
 @media only screen and (max-width: 375px) { /*celular*/
@@ -360,7 +356,7 @@ footer p{
 
     #contenedor-transcripcion {
         position: absolute;
-        left: 5px;
+        left: 20px;
         width: 80%;
         height: 40%;
         margin: 0;
